@@ -1,7 +1,7 @@
-//Height is in mm
+//Height is in m
 //weight is in kg
 
-const pokemon = [
+const pokemons = [
   {
     id: 1,
     name: "Bulbasaur",
@@ -24,3 +24,15 @@ const pokemon = [
     type: ["water"],
   },
 ];
+
+for (let i = 0; i < pokemons.length; i++) {
+  const pokemon = pokemons[i];
+  const pokemonHeight = pokemons[i].height;
+  const html = `<h1>${pokemon.name}</h1>
+                <h3>${
+                  pokemonHeight >= 0.7
+                    ? `Height: ${pokemonHeight}m - Wow! That is big!`
+                    : `Height: ${pokemonHeight}m`
+                }</h3>`;
+  document.write(html);
+}
