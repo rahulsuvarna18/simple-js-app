@@ -3,3 +3,17 @@ body {
   align-items: center;
   justify-content: center; */
 }
+
+li {
+  list-style: none;
+}
+
+.pokemon-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  /* display: ; */
+}
