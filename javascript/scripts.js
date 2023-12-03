@@ -120,7 +120,7 @@ let pokemonRepository = (function () {
     ulItem.appendChild(listItem);
 
     button.addEventListener("click", function () {
-      showDetails(pokemon.name);
+      showDetails(pokemon);
     });
   }
 
